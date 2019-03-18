@@ -56,7 +56,7 @@
             this.panelLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelLeft.Location = new System.Drawing.Point(0, 0);
             this.panelLeft.Name = "panelLeft";
-            this.panelLeft.Size = new System.Drawing.Size(241, 561);
+            this.panelLeft.Size = new System.Drawing.Size(256, 561);
             this.panelLeft.TabIndex = 0;
             // 
             // flowLayoutPanel1
@@ -115,7 +115,7 @@
             this.btnLogOutHrDash.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLogOutHrDash.Location = new System.Drawing.Point(0, 470);
             this.btnLogOutHrDash.Name = "btnLogOutHrDash";
-            this.btnLogOutHrDash.Size = new System.Drawing.Size(238, 60);
+            this.btnLogOutHrDash.Size = new System.Drawing.Size(250, 60);
             this.btnLogOutHrDash.TabIndex = 12;
             this.btnLogOutHrDash.Text = "Log Out";
             this.btnLogOutHrDash.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -134,7 +134,7 @@
             this.btnAddStaffHrDash.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAddStaffHrDash.Location = new System.Drawing.Point(3, 99);
             this.btnAddStaffHrDash.Name = "btnAddStaffHrDash";
-            this.btnAddStaffHrDash.Size = new System.Drawing.Size(235, 60);
+            this.btnAddStaffHrDash.Size = new System.Drawing.Size(247, 60);
             this.btnAddStaffHrDash.TabIndex = 7;
             this.btnAddStaffHrDash.Text = "Add Staff";
             this.btnAddStaffHrDash.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -153,7 +153,7 @@
             this.btnHolidayCalenderHrDash.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHolidayCalenderHrDash.Location = new System.Drawing.Point(0, 396);
             this.btnHolidayCalenderHrDash.Name = "btnHolidayCalenderHrDash";
-            this.btnHolidayCalenderHrDash.Size = new System.Drawing.Size(238, 60);
+            this.btnHolidayCalenderHrDash.Size = new System.Drawing.Size(250, 60);
             this.btnHolidayCalenderHrDash.TabIndex = 11;
             this.btnHolidayCalenderHrDash.Text = "Office Holiday Calender";
             this.btnHolidayCalenderHrDash.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -172,7 +172,7 @@
             this.btnLeavesRequestHrDash.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLeavesRequestHrDash.Location = new System.Drawing.Point(0, 248);
             this.btnLeavesRequestHrDash.Name = "btnLeavesRequestHrDash";
-            this.btnLeavesRequestHrDash.Size = new System.Drawing.Size(238, 60);
+            this.btnLeavesRequestHrDash.Size = new System.Drawing.Size(250, 60);
             this.btnLeavesRequestHrDash.TabIndex = 8;
             this.btnLeavesRequestHrDash.Text = "Leaves Request";
             this.btnLeavesRequestHrDash.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -191,7 +191,7 @@
             this.btnStaffAvailabilityHrDash.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnStaffAvailabilityHrDash.Location = new System.Drawing.Point(0, 322);
             this.btnStaffAvailabilityHrDash.Name = "btnStaffAvailabilityHrDash";
-            this.btnStaffAvailabilityHrDash.Size = new System.Drawing.Size(238, 60);
+            this.btnStaffAvailabilityHrDash.Size = new System.Drawing.Size(250, 60);
             this.btnStaffAvailabilityHrDash.TabIndex = 10;
             this.btnStaffAvailabilityHrDash.Text = "Staff Availability";
             this.btnStaffAvailabilityHrDash.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -210,7 +210,7 @@
             this.btnEditStaffHrDash.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEditStaffHrDash.Location = new System.Drawing.Point(0, 174);
             this.btnEditStaffHrDash.Name = "btnEditStaffHrDash";
-            this.btnEditStaffHrDash.Size = new System.Drawing.Size(238, 60);
+            this.btnEditStaffHrDash.Size = new System.Drawing.Size(250, 60);
             this.btnEditStaffHrDash.TabIndex = 9;
             this.btnEditStaffHrDash.Text = "Delete/Edit Staff";
             this.btnEditStaffHrDash.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
