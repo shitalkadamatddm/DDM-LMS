@@ -366,9 +366,9 @@
             // 
             this.dataGridView1.AllowUserToOrderColumns = true;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(380, 72);
+            this.dataGridView1.Location = new System.Drawing.Point(3, 72);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(283, 45);
+            this.dataGridView1.Size = new System.Drawing.Size(707, 56);
             this.dataGridView1.TabIndex = 77;
             // 
             // pictureBox1

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace DDM_LMS
 {
@@ -28,6 +29,7 @@ namespace DDM_LMS
                 return _instance;
             }
         }
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\DatabaseDDM-LMS.mdf;Integrated Security=True");
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
@@ -36,6 +38,33 @@ namespace DDM_LMS
         private void EditStaffUserControl_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void buttonSearchEmployeeEsUc_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                SqlCommand cmd = new SqlCommand("", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                SqlDataAdapter DA = new SqlDataAdapter(cmd);
+                DataSet DS = new DataSet();
+                DA.Fill(DS);
+                con.Open();
+                try
+                {
+                    cmd.ExecuteNonQuery();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("<<<Invalid SQL OPERATION>>>: \n" + ex);
+                }
+                con.Close();
+                dataGridViewEmployeeSearchResult.DataSource = DS.Tables[0];
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("" + ex);
+            }
         }
     }
 }

@@ -65,9 +65,17 @@ namespace DDM_LMS
         {
             SqlCommand cmd = new SqlCommand("AddStaff_Sp", con);
             cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@Title", comboBoxTitleUcAs.Text);
             cmd.Parameters.AddWithValue("@FirstName", textBoxFirstNameUcAs.Text);
             cmd.Parameters.AddWithValue("@LastName", textBoxLastNameUcAs.Text);
-
+            cmd.Parameters.AddWithValue("@ContactNumber1", textBoxContactNumber1Ae.Text);
+            cmd.Parameters.AddWithValue("@ContactNumber2", textBoxContactNumber2As.Text);
+            cmd.Parameters.AddWithValue("@PersonalEmailId", textBoxPersonalEmailAs.Text);
+            cmd.Parameters.AddWithValue("@OfficeEmailId", textBoxOfficeEmailAs.Text);
+            cmd.Parameters.AddWithValue("@Department", comboBoxDepartmentAs.Text);
+            cmd.Parameters.AddWithValue("@Manager", textBoxStaffManagerAs.Text);
+            cmd.Parameters.AddWithValue("@LeavesAllowanceSick", textBoxSickLeaveAs.Text);
+            cmd.Parameters.AddWithValue("@LeavesAllowanceCasual", textBoxCasualLeaveAs.Text);
             con.Open();
             try
             {
