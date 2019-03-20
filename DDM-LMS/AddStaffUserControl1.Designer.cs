@@ -66,6 +66,11 @@
             // comboBoxTitleUcAs
             // 
             this.comboBoxTitleUcAs.FormattingEnabled = true;
+            this.comboBoxTitleUcAs.Items.AddRange(new object[] {
+            "Mr",
+            "Miss",
+            "Mrs",
+            "Master"});
             this.comboBoxTitleUcAs.Location = new System.Drawing.Point(181, 154);
             this.comboBoxTitleUcAs.Name = "comboBoxTitleUcAs";
             this.comboBoxTitleUcAs.Size = new System.Drawing.Size(138, 21);
@@ -106,6 +111,10 @@
             // 
             this.comboBoxDepartmentAs.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.comboBoxDepartmentAs.FormattingEnabled = true;
+            this.comboBoxDepartmentAs.Items.AddRange(new object[] {
+            "Technical",
+            "Engagement team",
+            "Editorial"});
             this.comboBoxDepartmentAs.Location = new System.Drawing.Point(179, 375);
             this.comboBoxDepartmentAs.Name = "comboBoxDepartmentAs";
             this.comboBoxDepartmentAs.Size = new System.Drawing.Size(143, 21);
@@ -125,7 +134,7 @@
             // 
             // textBoxContactNumber1Ae
             // 
-            this.textBoxContactNumber1Ae.Location = new System.Drawing.Point(181, 300);
+            this.textBoxContactNumber1Ae.Location = new System.Drawing.Point(181, 296);
             this.textBoxContactNumber1Ae.Name = "textBoxContactNumber1Ae";
             this.textBoxContactNumber1Ae.Size = new System.Drawing.Size(138, 20);
             this.textBoxContactNumber1Ae.TabIndex = 58;
@@ -144,14 +153,14 @@
             // 
             // textBoxOfficeEmailAs
             // 
-            this.textBoxOfficeEmailAs.Location = new System.Drawing.Point(181, 247);
+            this.textBoxOfficeEmailAs.Location = new System.Drawing.Point(537, 252);
             this.textBoxOfficeEmailAs.Name = "textBoxOfficeEmailAs";
             this.textBoxOfficeEmailAs.Size = new System.Drawing.Size(138, 20);
             this.textBoxOfficeEmailAs.TabIndex = 57;
             // 
             // textBoxFirstNameUcAs
             // 
-            this.textBoxFirstNameUcAs.Location = new System.Drawing.Point(181, 195);
+            this.textBoxFirstNameUcAs.Location = new System.Drawing.Point(181, 202);
             this.textBoxFirstNameUcAs.Name = "textBoxFirstNameUcAs";
             this.textBoxFirstNameUcAs.Size = new System.Drawing.Size(138, 20);
             this.textBoxFirstNameUcAs.TabIndex = 56;
@@ -161,7 +170,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.label8.Location = new System.Drawing.Point(30, 299);
+            this.label8.Location = new System.Drawing.Point(30, 298);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(145, 18);
             this.label8.TabIndex = 55;
@@ -172,7 +181,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.label6.Location = new System.Drawing.Point(30, 246);
+            this.label6.Location = new System.Drawing.Point(377, 251);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(118, 18);
             this.label6.TabIndex = 54;
@@ -183,7 +192,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.label4.Location = new System.Drawing.Point(30, 194);
+            this.label4.Location = new System.Drawing.Point(30, 204);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(91, 18);
             this.label4.TabIndex = 53;
@@ -281,7 +290,7 @@
             // textBoxContactNumber2As
             // 
             this.textBoxContactNumber2As.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxContactNumber2As.Location = new System.Drawing.Point(536, 257);
+            this.textBoxContactNumber2As.Location = new System.Drawing.Point(537, 155);
             this.textBoxContactNumber2As.Name = "textBoxContactNumber2As";
             this.textBoxContactNumber2As.Size = new System.Drawing.Size(138, 20);
             this.textBoxContactNumber2As.TabIndex = 74;
@@ -297,7 +306,7 @@
             // textBoxLastNameUcAs
             // 
             this.textBoxLastNameUcAs.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxLastNameUcAs.Location = new System.Drawing.Point(536, 152);
+            this.textBoxLastNameUcAs.Location = new System.Drawing.Point(181, 249);
             this.textBoxLastNameUcAs.Name = "textBoxLastNameUcAs";
             this.textBoxLastNameUcAs.Size = new System.Drawing.Size(138, 20);
             this.textBoxLastNameUcAs.TabIndex = 72;
@@ -308,7 +317,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.label9.Location = new System.Drawing.Point(376, 256);
+            this.label9.Location = new System.Drawing.Point(377, 154);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(145, 18);
             this.label9.TabIndex = 71;
@@ -332,7 +341,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.label5.Location = new System.Drawing.Point(376, 151);
+            this.label5.Location = new System.Drawing.Point(30, 251);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(89, 18);
             this.label5.TabIndex = 69;
