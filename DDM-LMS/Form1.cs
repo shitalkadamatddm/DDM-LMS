@@ -16,5 +16,58 @@ namespace DDM_LMS
         {
             InitializeComponent();
         }
+
+        private void btnAddStaffHrDash_Click(object sender, EventArgs e)
+        {
+            if (!contentPanel.Controls.Contains(AddStaffUserControl1.Instance))
+            {
+                contentPanel.Controls.Add(AddStaffUserControl1.Instance);
+                AddStaffUserControl1.Instance.Dock = DockStyle.Fill;
+                AddStaffUserControl1.Instance.BringToFront();
+            }
+            else
+            {
+                AddStaffUserControl1.Instance.BringToFront();
+            }
+        }
+
+        private void btnLogOutHrDash_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnEditStaffHrDash_Click(object sender, EventArgs e)
+        {
+            if (!contentPanel.Controls.Contains(EditStaffUserControl.Instance))
+            {
+                contentPanel.Controls.Add(EditStaffUserControl.Instance);
+                EditStaffUserControl.Instance.Dock = DockStyle.Fill;
+                EditStaffUserControl.Instance.BringToFront();
+            }
+            else
+            {
+                EditStaffUserControl.Instance.BringToFront();
+            }
+        }
+        bool isSlidingPanelExpanded;
+        const int MaxSliderWidth = 256;
+        const int MinSliderWidth = 42;
+        private void SlidingPaneltoggleButton_Click(object sender, EventArgs e)
+        {
+            if (panelLeft.Width >= 256)
+            {
+                panelLeft.Width = 42;
+                SlidingPaneltoggleButton.Width = 42;
+            }
+            else
+            {
+                panelLeft.Width = 256;
+                //SlidingPaneltoggleButton.Width = 256;
+            }
+        }
+
+        
+        }
     }
-}
+
+

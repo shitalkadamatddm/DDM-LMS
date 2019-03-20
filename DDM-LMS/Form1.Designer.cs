@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.panelLeft = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.textBoxUserNameHrDash = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.contentPanel = new System.Windows.Forms.Panel();
+            this.SlidingPaneltoggleButton = new System.Windows.Forms.Button();
             this.btnLogOutHrDash = new System.Windows.Forms.Button();
             this.btnAddStaffHrDash = new System.Windows.Forms.Button();
             this.btnHolidayCalenderHrDash = new System.Windows.Forms.Button();
@@ -40,12 +40,12 @@
             this.btnStaffAvailabilityHrDash = new System.Windows.Forms.Button();
             this.btnEditStaffHrDash = new System.Windows.Forms.Button();
             this.panelLeft.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelLeft
             // 
             this.panelLeft.BackColor = System.Drawing.Color.DarkGray;
+            this.panelLeft.Controls.Add(this.SlidingPaneltoggleButton);
             this.panelLeft.Controls.Add(this.textBoxUserNameHrDash);
             this.panelLeft.Controls.Add(this.btnLogOutHrDash);
             this.panelLeft.Controls.Add(this.btnAddStaffHrDash);
@@ -59,13 +59,6 @@
             this.panelLeft.Size = new System.Drawing.Size(256, 561);
             this.panelLeft.TabIndex = 0;
             // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(915, 611);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(200, 100);
-            this.flowLayoutPanel1.TabIndex = 1;
-            // 
             // textBoxUserNameHrDash
             // 
             this.textBoxUserNameHrDash.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -73,34 +66,38 @@
             this.textBoxUserNameHrDash.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxUserNameHrDash.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxUserNameHrDash.ForeColor = System.Drawing.Color.White;
-            this.textBoxUserNameHrDash.Location = new System.Drawing.Point(3, 26);
+            this.textBoxUserNameHrDash.Location = new System.Drawing.Point(40, 62);
             this.textBoxUserNameHrDash.Name = "textBoxUserNameHrDash";
-            this.textBoxUserNameHrDash.Size = new System.Drawing.Size(238, 19);
+            this.textBoxUserNameHrDash.Size = new System.Drawing.Size(155, 19);
             this.textBoxUserNameHrDash.TabIndex = 13;
             this.textBoxUserNameHrDash.Text = "User\'s  Name";
             // 
-            // label1
+            // flowLayoutPanel1
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.Control;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Salmon;
-            this.label1.Location = new System.Drawing.Point(355, 19);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(617, 29);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Diabetes Digital Media Leaves Management System";
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(915, 611);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(200, 100);
+            this.flowLayoutPanel1.TabIndex = 1;
             // 
-            // pictureBox1
+            // contentPanel
             // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox1.Image = global::DDM_LMS.Properties.Resources.hope;
-            this.pictureBox1.Location = new System.Drawing.Point(256, 1);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(76, 63);
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
+            this.contentPanel.Location = new System.Drawing.Point(262, 1);
+            this.contentPanel.Name = "contentPanel";
+            this.contentPanel.Size = new System.Drawing.Size(722, 560);
+            this.contentPanel.TabIndex = 4;
+            // 
+            // SlidingPaneltoggleButton
+            // 
+            this.SlidingPaneltoggleButton.FlatAppearance.BorderColor = System.Drawing.Color.DarkGray;
+            this.SlidingPaneltoggleButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SlidingPaneltoggleButton.ForeColor = System.Drawing.Color.DarkGray;
+            this.SlidingPaneltoggleButton.Image = global::DDM_LMS.Properties.Resources.Menu_icon32;
+            this.SlidingPaneltoggleButton.Location = new System.Drawing.Point(0, 0);
+            this.SlidingPaneltoggleButton.Name = "SlidingPaneltoggleButton";
+            this.SlidingPaneltoggleButton.Size = new System.Drawing.Size(57, 56);
+            this.SlidingPaneltoggleButton.TabIndex = 0;
+            this.SlidingPaneltoggleButton.UseVisualStyleBackColor = true;
+            this.SlidingPaneltoggleButton.Click += new System.EventHandler(this.SlidingPaneltoggleButton_Click);
             // 
             // btnLogOutHrDash
             // 
@@ -120,6 +117,7 @@
             this.btnLogOutHrDash.Text = "Log Out";
             this.btnLogOutHrDash.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnLogOutHrDash.UseVisualStyleBackColor = false;
+            this.btnLogOutHrDash.Click += new System.EventHandler(this.btnLogOutHrDash_Click);
             // 
             // btnAddStaffHrDash
             // 
@@ -130,15 +128,16 @@
             this.btnAddStaffHrDash.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddStaffHrDash.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddStaffHrDash.ForeColor = System.Drawing.Color.White;
-            this.btnAddStaffHrDash.Image = global::DDM_LMS.Properties.Resources.Person_white_add_48;
+            this.btnAddStaffHrDash.Image = global::DDM_LMS.Properties.Resources.Person_white_add_32__1_;
             this.btnAddStaffHrDash.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAddStaffHrDash.Location = new System.Drawing.Point(3, 99);
             this.btnAddStaffHrDash.Name = "btnAddStaffHrDash";
-            this.btnAddStaffHrDash.Size = new System.Drawing.Size(247, 60);
+            this.btnAddStaffHrDash.Size = new System.Drawing.Size(250, 60);
             this.btnAddStaffHrDash.TabIndex = 7;
             this.btnAddStaffHrDash.Text = "Add Staff";
             this.btnAddStaffHrDash.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAddStaffHrDash.UseVisualStyleBackColor = false;
+            this.btnAddStaffHrDash.Click += new System.EventHandler(this.btnAddStaffHrDash_Click);
             // 
             // btnHolidayCalenderHrDash
             // 
@@ -191,7 +190,7 @@
             this.btnStaffAvailabilityHrDash.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnStaffAvailabilityHrDash.Location = new System.Drawing.Point(0, 322);
             this.btnStaffAvailabilityHrDash.Name = "btnStaffAvailabilityHrDash";
-            this.btnStaffAvailabilityHrDash.Size = new System.Drawing.Size(250, 60);
+            this.btnStaffAvailabilityHrDash.Size = new System.Drawing.Size(244, 60);
             this.btnStaffAvailabilityHrDash.TabIndex = 10;
             this.btnStaffAvailabilityHrDash.Text = "Staff Availability";
             this.btnStaffAvailabilityHrDash.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -215,23 +214,22 @@
             this.btnEditStaffHrDash.Text = "Delete/Edit Staff";
             this.btnEditStaffHrDash.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnEditStaffHrDash.UseVisualStyleBackColor = false;
+            this.btnEditStaffHrDash.Click += new System.EventHandler(this.btnEditStaffHrDash_Click);
             // 
             // HRdashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(984, 561);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.contentPanel);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.panelLeft);
+            this.ForeColor = System.Drawing.Color.White;
             this.Name = "HRdashboard";
             this.Text = "HR Dashboard";
             this.panelLeft.ResumeLayout(false);
             this.panelLeft.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -246,8 +244,8 @@
         private System.Windows.Forms.Button btnEditStaffHrDash;
         private System.Windows.Forms.Button btnLeavesRequestHrDash;
         private System.Windows.Forms.Button btnAddStaffHrDash;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel contentPanel;
+        private System.Windows.Forms.Button SlidingPaneltoggleButton;
     }
 }
 
