@@ -33,7 +33,7 @@ namespace DDM_LMS
         }
         private void AddStaffUserControl1_Load(object sender, EventArgs e)
         {
-
+            refresh_DataGridview();
         }
         public void refresh_DataGridview()
         {
