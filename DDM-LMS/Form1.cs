@@ -58,6 +58,8 @@ namespace DDM_LMS
             {
                 panelLeft.Width = 42;
                 SlidingPaneltoggleButton.Width = 42;
+                contentPanel.Move = 894;
+                //panelAddStaffUserControl.width= 894;
             }
             else
             {
@@ -66,8 +68,16 @@ namespace DDM_LMS
             }
         }
 
-        
+        private void btnAddStaffHrDash_MouseEnter(object sender, EventArgs e)
+        {
+            btnAddStaffHrDash.BackColor = Color.DodgerBlue;
         }
+
+        private void HRdashboard_Load(object sender, EventArgs e)
+        {
+
+        }
+    }
     }
 
 

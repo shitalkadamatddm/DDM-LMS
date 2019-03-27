@@ -37,18 +37,45 @@ namespace DDM_LMS
 
         private void EditStaffUserControl_Load(object sender, EventArgs e)
         {
-
+            refresh_DataGridview();
         }
-
-        private void buttonSearchEmployeeEsUc_Click(object sender, EventArgs e)
+        public void refresh_DataGridview()
         {
             try
             {
-                SqlCommand cmd = new SqlCommand("", con);
+                SqlCommand cmd = new SqlCommand("ShowAddedStaffStoredPro", con);
                 cmd.CommandType = CommandType.StoredProcedure;
                 SqlDataAdapter DA = new SqlDataAdapter(cmd);
                 DataSet DS = new DataSet();
                 DA.Fill(DS);
+                con.Open();
+                try
+                {
+                    cmd.ExecuteNonQuery();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("<<<Invalid SQL OPERATION>>>: \n" + ex);
+                }
+                con.Close();
+                dataGridViewEmployeeSearchResult.DataSource = DS.Tables[0];
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("" + ex);
+            }
+        }
+        private void buttonSearchEmployeeEsUc_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                SqlCommand cmd = new SqlCommand("SearchEmployeeStoredp", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@OfficeEmailId", textBoxSearchEmployeeEsUc.Text);
+                SqlDataAdapter DA = new SqlDataAdapter(cmd);
+                DataSet DS = new DataSet();
+                DA.Fill(DS);
+                
                 con.Open();
                 try
                 {

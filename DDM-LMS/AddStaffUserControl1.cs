@@ -33,7 +33,7 @@ namespace DDM_LMS
         }
         private void AddStaffUserControl1_Load(object sender, EventArgs e)
         {
-            refresh_DataGridview();
+            
         }
         public void refresh_DataGridview()
         {
@@ -86,11 +86,61 @@ namespace DDM_LMS
                 MessageBox.Show("<<<Invalid SQL OPERATION>>>: \n" + ex);
             }
             con.Close();
+
             MessageBox.Show("Added staff successfully");
-            refresh_DataGridview();
-            
+            RefreshAddstaffuserFrom();
+            //refresh_DataGridview();
+
+        }
+        private void RefreshAddstaffuserFrom()
+        {
+            comboBoxTitleUcAs.Text = "";
+            textBoxFirstNameUcAs.Text = "";
+            textBoxLastNameUcAs.Text = "";
+            textBoxContactNumber1Ae.Text = "";
+            textBoxContactNumber2As.Text = "";
+            textBoxPersonalEmailAs.Text = "";
+            textBoxOfficeEmailAs.Text = "";
+            comboBoxDepartmentAs.Text = "";
+            textBoxStaffManagerAs.Text = "";
+            textBoxSickLeaveAs.Text = "";
+            textBoxCasualLeaveAs.Text = "";
+
         }
 
-        
+        private void label12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBoxDepartmentAs_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxStaffManagerAs_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxOfficeEmailAs_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

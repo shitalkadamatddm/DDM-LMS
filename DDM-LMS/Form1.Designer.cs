@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             this.panelLeft = new System.Windows.Forms.Panel();
-            this.textBoxUserNameHrDash = new System.Windows.Forms.TextBox();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.contentPanel = new System.Windows.Forms.Panel();
             this.SlidingPaneltoggleButton = new System.Windows.Forms.Button();
+            this.textBoxUserNameHrDash = new System.Windows.Forms.TextBox();
             this.btnLogOutHrDash = new System.Windows.Forms.Button();
             this.btnAddStaffHrDash = new System.Windows.Forms.Button();
             this.btnHolidayCalenderHrDash = new System.Windows.Forms.Button();
             this.btnLeavesRequestHrDash = new System.Windows.Forms.Button();
             this.btnStaffAvailabilityHrDash = new System.Windows.Forms.Button();
             this.btnEditStaffHrDash = new System.Windows.Forms.Button();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.contentPanel = new System.Windows.Forms.Panel();
             this.panelLeft.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -59,33 +59,6 @@
             this.panelLeft.Size = new System.Drawing.Size(256, 561);
             this.panelLeft.TabIndex = 0;
             // 
-            // textBoxUserNameHrDash
-            // 
-            this.textBoxUserNameHrDash.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBoxUserNameHrDash.BackColor = System.Drawing.Color.DarkGray;
-            this.textBoxUserNameHrDash.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxUserNameHrDash.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxUserNameHrDash.ForeColor = System.Drawing.Color.White;
-            this.textBoxUserNameHrDash.Location = new System.Drawing.Point(40, 62);
-            this.textBoxUserNameHrDash.Name = "textBoxUserNameHrDash";
-            this.textBoxUserNameHrDash.Size = new System.Drawing.Size(155, 19);
-            this.textBoxUserNameHrDash.TabIndex = 13;
-            this.textBoxUserNameHrDash.Text = "User\'s  Name";
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(915, 611);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(200, 100);
-            this.flowLayoutPanel1.TabIndex = 1;
-            // 
-            // contentPanel
-            // 
-            this.contentPanel.Location = new System.Drawing.Point(262, 1);
-            this.contentPanel.Name = "contentPanel";
-            this.contentPanel.Size = new System.Drawing.Size(722, 560);
-            this.contentPanel.TabIndex = 4;
-            // 
             // SlidingPaneltoggleButton
             // 
             this.SlidingPaneltoggleButton.FlatAppearance.BorderColor = System.Drawing.Color.DarkGray;
@@ -98,6 +71,19 @@
             this.SlidingPaneltoggleButton.TabIndex = 0;
             this.SlidingPaneltoggleButton.UseVisualStyleBackColor = true;
             this.SlidingPaneltoggleButton.Click += new System.EventHandler(this.SlidingPaneltoggleButton_Click);
+            // 
+            // textBoxUserNameHrDash
+            // 
+            this.textBoxUserNameHrDash.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.textBoxUserNameHrDash.BackColor = System.Drawing.Color.DarkGray;
+            this.textBoxUserNameHrDash.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxUserNameHrDash.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxUserNameHrDash.ForeColor = System.Drawing.Color.White;
+            this.textBoxUserNameHrDash.Location = new System.Drawing.Point(40, 62);
+            this.textBoxUserNameHrDash.Name = "textBoxUserNameHrDash";
+            this.textBoxUserNameHrDash.Size = new System.Drawing.Size(155, 19);
+            this.textBoxUserNameHrDash.TabIndex = 13;
+            this.textBoxUserNameHrDash.Text = "User\'s  Name";
             // 
             // btnLogOutHrDash
             // 
@@ -138,6 +124,7 @@
             this.btnAddStaffHrDash.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAddStaffHrDash.UseVisualStyleBackColor = false;
             this.btnAddStaffHrDash.Click += new System.EventHandler(this.btnAddStaffHrDash_Click);
+            this.btnAddStaffHrDash.MouseEnter += new System.EventHandler(this.btnAddStaffHrDash_MouseEnter);
             // 
             // btnHolidayCalenderHrDash
             // 
@@ -216,6 +203,20 @@
             this.btnEditStaffHrDash.UseVisualStyleBackColor = false;
             this.btnEditStaffHrDash.Click += new System.EventHandler(this.btnEditStaffHrDash_Click);
             // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(915, 611);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(200, 100);
+            this.flowLayoutPanel1.TabIndex = 1;
+            // 
+            // contentPanel
+            // 
+            this.contentPanel.Location = new System.Drawing.Point(262, 1);
+            this.contentPanel.Name = "contentPanel";
+            this.contentPanel.Size = new System.Drawing.Size(722, 560);
+            this.contentPanel.TabIndex = 4;
+            // 
             // HRdashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -227,6 +228,7 @@
             this.ForeColor = System.Drawing.Color.White;
             this.Name = "HRdashboard";
             this.Text = "HR Dashboard";
+            this.Load += new System.EventHandler(this.HRdashboard_Load);
             this.panelLeft.ResumeLayout(false);
             this.panelLeft.PerformLayout();
             this.ResumeLayout(false);

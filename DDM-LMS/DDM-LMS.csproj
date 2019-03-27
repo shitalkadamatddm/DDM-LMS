@@ -61,6 +61,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddNewFeatureForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddNewFeatureForm.Designer.cs">
+      <DependentUpon>AddNewFeatureForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddStaffUserControl1.cs">
       <SubType>UserControl</SubType>
     </Compile>
