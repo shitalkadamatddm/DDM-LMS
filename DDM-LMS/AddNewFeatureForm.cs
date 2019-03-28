@@ -16,5 +16,15 @@ namespace DDM_LMS
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Please enter the value");
+        }
+
+        private void AddNewFeatureForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
