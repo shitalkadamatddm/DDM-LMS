@@ -58,7 +58,7 @@ namespace DDM_LMS
             {
                 panelLeft.Width = 42;
                 SlidingPaneltoggleButton.Width = 42;
-                contentPanel.Move = 894;
+                //contentPanel.Move = 894;
                 //panelAddStaffUserControl.width= 894;
             }
             else

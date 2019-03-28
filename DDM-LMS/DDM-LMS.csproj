@@ -87,6 +87,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddNewFeatureForm.resx">
+      <DependentUpon>AddNewFeatureForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddStaffUserControl1.resx">
       <DependentUpon>AddStaffUserControl1.cs</DependentUpon>
     </EmbeddedResource>
