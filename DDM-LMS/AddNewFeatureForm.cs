@@ -19,7 +19,7 @@ namespace DDM_LMS
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Please enter the value");
+            MessageBox.Show("Please enter the value?");
         }
 
         private void AddNewFeatureForm_Load(object sender, EventArgs e)
